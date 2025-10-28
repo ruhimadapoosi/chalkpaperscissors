@@ -6,8 +6,16 @@
     <title>Chalk Paper Scissors Diary</title>
     <meta name="description" content="Chalk Paper Scissors is a 2D Visual Novel/Sidescroller Game created by SJSU BFA Students">
     <meta name="keywords" content="Chalk Paper Scissors, Visual Novel, Sidescroller, Animation, Illustration, SJSU BFA, 2D Game, Indie">
+<!-- FONTS--------------------------------------------------->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"" rel="stylesheet">
 <!--CSS SHEET LINKS ----------------------------------------->
 <link rel="stylesheet" href="css/styles.css">
+
+<!--FAVICON ---------------------------------------------------------->
+<link rel="icon" type="image/png" href="assets/stuff-tiny.png">
+
 </head>
 
 <body class="diary-body">
@@ -18,8 +26,8 @@
             <a href="#">Diary</a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Diary</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Diary</a></li>
             <li><a href="team.html">Meet the Team</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
@@ -34,13 +42,13 @@
 <div class="content-wrapper">
 
 <main>
-<div>
-    <img src="assets/progress-01.png" id="prog-01">
-</div>
 
 <a href="#"><img src="assets/diary-closed-1500px.png" id="closed-diary"></a>
 <a href="#"><img src="assets/diary-open-1500px.png" id="open-diary"></a>
 <a href="#"><img src="assets/key.png" id="key"></a>
+
+<div class="container-home">
+    <img src="assets/progress-01.png" id="prog-01">
 
 </main>
 
@@ -55,5 +63,6 @@
 
 <!--JS SHEET LINKS --------------------------------------------->
 <script type="module" src="js/main.js"></script>
+<script type="module" src="js/diary.js"></script>
 
 </html>

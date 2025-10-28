@@ -6,8 +6,16 @@
     <title>Chalk Paper Scissors Meet the Team</title>
     <meta name="description" content="Chalk Paper Scissors is a 2D Visual Novel/Sidescroller Game created by SJSU BFA Students">
     <meta name="keywords" content="Chalk Paper Scissors, Visual Novel, Sidescroller, Animation, Illustration, SJSU BFA, 2D Game, Indie">
-<!--CSS SHEET LINKS ----------------------------------------->
+<!-- FONTS--------------------------------------------------->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"" rel="stylesheet">
+    <!--CSS SHEET LINKS ----------------------------------------->
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/modal.css">
+ <!--FAVICON ---------------------------------------------------------->
+<link rel="icon" type="image/png" href="assets/stuff-tiny.png">
+
 </head>
 
 <body class="home-body">
@@ -19,9 +27,9 @@
             <a href="#">Meet the Team</a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="diary.html">Diary</a></li>
-            <li><a href="#">Meet the Team</a></li>
+            <li><a href="#" class="active">Meet the Team</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
         <div class="menu-toggle">
@@ -32,11 +40,113 @@
     </nav>
 </header>
 
-<div class="content-wrapper">
 
-<main>
+<div class="container-team">
+<div class="content-wrapper-team">
+    <main>
+        <section>
+                <img src="assets/teambg.png" class="team-bg">
+                <img src="assets/teambg_02.png" id="team-bg2">
 
-</main>
+                <!-- photos -->
+                <img src="assets/stuffie.png" class="team-photo" id="mainphoto">
+
+                <!-- portfolio pieces  -->
+                <img id="team-port-01" src="assets/ru-port-01.png" class="modImages">
+                <img id="team-port-02" src="assets/ru-port-01.png" class="modImages">
+
+                
+                <!-- about -->
+                <div class="team-about-container">
+                    <img src="assets/teambg-about.png" class="team-about">
+                    <p class="team-about" id="team-about-paragraph"></p>
+                </div>
+
+                <div class="funsies" id="funsies">
+                            <div >
+                                <p id="username"></p>
+                            </div>
+                            <div class="mood-container">
+                                    <p>mood:</p>
+                                    <p id="team-mood"></p>  
+                                    <img src="assets/mood-01.png" id="team-mood-img">
+                            </div>
+                            <div>
+                                <ul class="socials">
+                                    <li>
+                                        <a href="#" class="fa fa-envelope" id="email">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-instagram" target="_blank" id="insta"> Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fa fa-linkedin" target="_blank" id="portfolio"> Porfolio</a>
+                                    </li>
+                               </ul>
+                            </div>
+                            <div>
+                                <p>childhood toy:</p>
+                                <p id="toy"></p>
+                            </div>
+                            <div>
+                                <p>childhood game:</p>
+                                <p id="game"></p>
+                            </div>                            
+                            <div>
+                                <p>fursona:</p>
+                                <p id="fursona"></p>
+                            </div>
+                </div>
+
+        </section>
+
+
+    <section class="team-sidebar">
+
+        <div class="team-bio-pfp">
+            <div class="team-pfp">
+            <img src="assets/pfp.png" id="pfp">
+            <img src="assets/pfp_c.png" id="pfp-c">
+            <img src="assets/pfp_p.png" id="pfp-p">
+            <img src="assets/pfp_s.png" id="pfp-s">
+            </div>
+            <div class="team-bio">
+            <h2 id="name"></h2>
+            <a href="#" id="log-in">log out?</a> <br>
+                <div class="mood-container">
+                <p>mood:</p>
+                <p id="mood"></p>  
+                <img src="assets/mood-01.png" id="pfp-mood">
+                </div>
+            </div>
+        </div>
+
+        <div class="names">
+        <div class="team-name">
+            <img src="assets/team-ru.png" id="team-ru">
+            <img src="assets/team-li.png" id="team-li">
+            <img src="assets/team-ka.png" id="team-ka">
+            <img src="assets/team-ci.png" id="team-ci">
+            <img src="assets/team-ei.png" id="team-ei">
+            <img src="assets/team-lu.png" id="team-lu">
+            <img src="assets/team-ca.png" id="team-ca">
+        </div>
+
+        <div class="team-name-icon">
+            <img src="assets/stuff-tiny.png" id="team-ru">
+            <img src="assets/stuff-tiny.png" id="team-li">
+            <img src="assets/stuff-tiny.png" id="team-ka">
+            <img src="assets/stuff-tiny.png" id="team-ci">
+            <img src="assets/stuff-tiny.png" id="team-ei">
+            <img src="assets/stuff-tiny.png" id="team-lu">
+            <img src="assets/stuff-tiny.png" id="team-ca">
+        </div>
+        </div>
+        </main>
+
+    </section>
+</div>
+</div>
 
 
 </div>
@@ -45,9 +155,20 @@
 
 </footer>
 
+
+<!-- The Modal -------------------------------------------------->
+<div id="myModal" class="modal">
+<!-- The Close Button -->
+<span class="close">&times;</span>
+<!-- Modal Content (The Image) -->
+<img class="modal-content" id="img01" src="">
+</div>
+
 </body>
 
 <!--JS SHEET LINKS --------------------------------------------->
 <script type="module" src="js/main.js"></script>
+<script language="javascript" type="text/javascript" src="js/modal.js"></script>
+<script language="javascript" type="text/javascript" src="js/team.js"></script>
 
 </html>

@@ -6,8 +6,15 @@
     <title>Chalk Paper Scissors Game</title>
     <meta name="description" content="Chalk Paper Scissors is a 2D Visual Novel/Sidescroller Game created by SJSU BFA Students">
     <meta name="keywords" content="Chalk Paper Scissors, Visual Novel, Sidescroller, Animation, Illustration, SJSU BFA, 2D Game, Indie">
-<!--CSS SHEET LINKS ----------------------------------------->
+<!-- FONTS--------------------------------------------------->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"" rel="stylesheet">
+    <!--CSS SHEET LINKS ----------------------------------------->
 <link rel="stylesheet" href="css/styles.css">
+ <!--FAVICON ---------------------------------------------------------->
+<link rel="icon" type="image/png" href="assets/stuff-tiny.png">
+
 </head>
 
 <body class="home-body">
@@ -32,10 +39,22 @@
     </nav>
 </header>
 
+
 <div class="container-home">
 <div class="content-wrapper-home">
+    <img src="assets/mainbg.png" class="placeholderbg">
+
     <main>
     <a href="diary.html"><img src="assets/diary-closed-1500px.png" class="home-diary"></a>
+    <div>
+    <img src="assets/ipod.png" class="ipod">
+
+        <audio controls autoplay muted class="home-audio">
+        <source src="#" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+    </div>
     <a href="team.html"><img src="assets/meettheteam.png" class="home-team"></a>
 
     <a href="#"><img src="assets/cpslogo-1500px.png" class="home-logo"></a>
@@ -51,6 +70,7 @@
 </body>
 
 <!--JS SHEET LINKS --------------------------------------------->
-<script type="module" src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/follow.js"></script>
 
 </html>

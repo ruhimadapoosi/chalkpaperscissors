@@ -6,8 +6,21 @@
     <title>Chalk Paper Scissors About</title>
     <meta name="description" content="Chalk Paper Scissors is a 2D Visual Novel/Sidescroller Game created by SJSU BFA Students">
     <meta name="keywords" content="Chalk Paper Scissors, Visual Novel, Sidescroller, Animation, Illustration, SJSU BFA, 2D Game, Indie">
+
+<!-- FONTS--------------------------------------------------->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet"" rel="stylesheet">
 <!--CSS SHEET LINKS ----------------------------------------->
 <link rel="stylesheet" href="css/styles.css">
+<!-- P5JS -------------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
+
+ <!--FAVICON ---------------------------------------------------------->
+<link rel="icon" type="image/png" href="assets/stuff-tiny.png">
+
+
 </head>
 
 <body class="home-body">
@@ -16,13 +29,13 @@
 
     <nav class="navbar">
         <div class="logo">
-            <a href="#">Meet the Team</a>
+            <a href="#">About Chalk Paper Scissors</a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="diary.html">Diary</a></li>
             <li><a href="team.html">Meet the Team</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#" class="active">About</a></li>
         </ul>
         <div class="menu-toggle">
             <span class="bar"></span>
@@ -38,9 +51,13 @@
     <section>
         <img src="assets/stuffie.png" class="stuffie">
     </section>
-    <section>
-<p>Chalk Paper Scissors is a 2D Visual Novel/Sidescroller Game! Play through the perspectives of three childhood friends as they debate over what happened to their beloved Stuffie when he went missing during a sleepover. 
-</p>
+    <section class="note">
+        <p>Chalk Paper Scissors is a 2D Visual Novel/Sidescroller Game! Play through the perspectives of three childhood friends as they debate over what happened to their beloved Stuffie when he went missing during a sleepover. 
+        </p>
+    </section>
+    <section class="play-btn">
+        <img src="assets/shape.png">
+        <a href="https://chalkpaperscissors.itch.io/" target="_blank">PLAY</a>
     </section>
 </main>
 
@@ -54,6 +71,6 @@
 </body>
 
 <!--JS SHEET LINKS --------------------------------------------->
-<script type="module" src="js/main.js"></script>
-
+<script src="js/main.js"></script>
+<script src="js/button.js"></script>
 </html>

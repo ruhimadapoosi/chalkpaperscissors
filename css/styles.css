@@ -21,12 +21,18 @@ body {
       height: 100vh;
       overflow: hidden;
     background-image: url(../assets/bg.png);
+    z-index: -3;
+
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 
 header {
     color: black;
+    z-index: 10;
 }
 
 
@@ -39,13 +45,14 @@ header {
     align-items: center;
     padding: 10px 20px;
     color: black;
+    font-size: 3rem;
+
 }
 
 /* Logo styling */
 .logo a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
 }
 
 /* Navigation links styling */
@@ -61,7 +68,6 @@ header {
 .nav-links a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
     transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
     padding: 5px 10px;
 }
@@ -70,6 +76,7 @@ header {
 .nav-links a.active {
     color: rgb(232, 26, 26);
     border-radius: 4px;
+    font-size: 4rem;
 }
 
 /* Menu toggle button for mobile view */
@@ -121,11 +128,15 @@ header {
 /* HOME PAGE *************************************************************/
 
 .container-home {
-position: absolute;
+    position: absolute;
       top: 50vh;
       left: 50vw;
       transform: translate(-50%, -50%) scale(1);
       transform-origin: center center;
+}
+
+.container-home img {
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
 }
 
 .content-wrapper-home {
@@ -137,6 +148,13 @@ position: absolute;
     max-width: 99vw;
     flex-direction: column;
     justify-content: center;
+
+}
+
+.placeholderbg {
+    position: absolute;
+    left: -50vw;
+    width: 100vw ;
 
 }
 
@@ -162,6 +180,23 @@ position: absolute;
     width: 40vw;
 }
 
+.ipod {
+      position: absolute;
+    left: 33vw;
+    top: 8vw;
+    transform: rotate(20deg);
+    width: 10vw;  
+}
+
+.home-audio {
+
+    position: absolute;
+    left: 35vw;
+    top: 16vw;
+    transform: rotate(20deg);
+    width: 8vw;  
+}
+
 .home-team:hover {
     transform: rotate(24deg) scale(1.05);
 }
@@ -185,8 +220,12 @@ position: absolute;
 
 }
 
+
+
 #closed-diary {
     height: 80vh;
+     filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+   
 }
 
 #closed-diary:active {
@@ -195,20 +234,24 @@ position: absolute;
 #open-diary {
     height: 80vh;
     display: none;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
 }
 
 #key {
     position: absolute;
     height: 20vh;
     right: 10vw;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
 }
 
 #prog-01 {
     display: none;
     position: absolute;
-    right: 15vw;
-    top: 20vw;
-    width: 30vw;
+    right: -25vw;
+    top: -10vw;
+    width: 20vw;
     transform: rotate(10deg);
 }
 #key:hover {
@@ -226,6 +269,262 @@ position: absolute;
 }
 }
 
+/* Meet the team *****************************************************/
+.container-team {
+    position: absolute;
+      top: 60vh;
+      left: 50vw;
+      transform: translate(-50%, -50%) scale(1);
+      transform-origin: center center;
+}
+
+.content-wrapper-team {
+    flex: 1 0 auto;
+    margin: 0 auto;
+
+    display: flex;
+    padding: 30px;
+    max-width: 99vw;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* team showcase */
+.team-bg {
+    position: absolute;
+    top: -15vw;
+    left: -35vw;
+    width: 50vw ;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+
+#team-bg2 {
+    position: absolute;
+    top: -17vw;
+    left: -37.5vw;
+    width: 55vw ;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+}
+
+.team-about {
+    position: absolute;
+    top: -20vw;
+    left: -45vw;
+    width: 25vw ;
+    transform: rotate(-5deg);
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+
+.team-about-container p {
+   font-size: 2.5rem; 
+}
+
+@media only screen and (max-width: 2100px){
+.team-about-container p {
+   font-size: 2rem; 
+}
+}
+
+@media only screen and (max-width: 1600px){
+.team-about-container p {
+   font-size: 1.5rem; 
+}
+}
+
+.team-photo {
+    position: absolute;
+    top: -13vw;
+    left: -28vw;
+    width: 25vw ;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+    transition: opacity 0.5s ease-in;
+
+}
+
+
+/* portfolio pieces  */
+#team-port-01 {
+    position: absolute;
+    top: -15vw;
+    left: 1vw;
+    width: 20vw;
+    transform: rotate(10deg);
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+
+#team-port-01:hover {
+    transform: scale(1.02);
+    transform: rotate(9deg);
+
+}
+
+#team-port-02 {
+    position: absolute;
+    top: -1vw;
+    left: -2vw;
+    width: 20vw;
+    transform: rotate(-5deg);
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+
+#team-port-02:hover {
+    transform: scale(1.02);
+    transform: rotate(-4deg);
+
+}
+
+/* funsies  */
+.funsies {
+    visibility: hidden;
+    position: absolute;
+    background-color: antiquewhite;
+    top: -8vw;
+    left: -43vw;
+    width: 10vw ;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+
+.funsies p {
+    font-size: 2.5rem;
+
+}
+
+.socials {
+    list-style: none;
+    justify-content: center;
+    text-decoration: none;
+    display: flex-block;
+
+}
+.socials li {
+    padding: 3;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fa:hover {
+  transform: scale(1.1);
+}
+.fa-envelope {
+  background: #98678E;
+  color:  #FFECA3;
+}
+
+.fa-instagram {
+  background: #D4215C;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+
+}
+
+
+/* names  */
+
+.team-name {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -5vw;
+    left: 25vw;
+    width: 20vw ;
+    gap: 5px;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+
+.team-name-icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -6.5vw;
+    left: 25vw;
+    width: 4vw ;
+    filter: drop-shadow(2px 2px 4px #0f0f1cb4);
+
+}
+
+.team-name-icon img {
+    width: 4vw;
+}
+
+.names img:hover {
+
+    transform: rotate(5deg);
+}
+
+/* bio  */
+.team-bio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 2vw;
+    left: 11vw;
+    width: 10vw ;
+    font-size: 2.5rem;
+
+}
+
+.team-bio-pfp {
+    position: absolute;
+    top: -20vw;
+    left: 25vw;
+    width: 20vw ;
+}
+
+.team-pfp {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0vw;
+    left: 0vw;
+    width: 10vw ;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+}
+
+#pfp {
+    display: absolute;
+}
+
+#pfp-c {
+    display: none;
+}
+
+#pfp-p {
+    display: none;
+}
+
+#pfp-s {
+    display: none;
+}
+
+.mood-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    background-color: aqua;
+
+}
+
+.team-bio .mood-container {
+        filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+.mood-container img {
+    height: 2.5rem;
+}
 
 /* About  *************************************************************/
 
@@ -248,6 +547,38 @@ section {
     /* add margin if you don't want to use gap in flex container (main) */
 }
 
+.note {
+        background-color: #FFECA3;
+    transform: rotate(-10deg);
+
+}
+.note p{
+    background-color: #FFECA3;
+    font-size: 3rem;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn {
+    position: absolute;
+    top: 15vh;
+    left: 70vw;
+    filter: drop-shadow(5px 5px 4px #0f0f1cb4);
+
+}
+.play-btn a {
+    font-size: 5rem;
+    position: absolute;
+    top: 6.5vw;
+    left: 6vw;
+}
+
+.play-btn img {
+    position: absolute;
+    width: 15vw;
+}
 
 .stuffie {
     width: 30vw;
