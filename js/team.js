@@ -83,16 +83,29 @@ document.querySelector("#team-ru").addEventListener("click", function() {
 })
 
 document.querySelector("#team-li").addEventListener("click", function() {
-        
+        document.getElementById("funsies").style.visibility = "visible";
+
         document.getElementById("team-port-01").src="assets/ru-port-02.png";
         document.getElementById("team-port-02").src="assets/ru-port-02.png";
+
+        document.getElementById("username").innerHTML = "@lyndonbjohnson";
+        document.getElementById("email").href = "#";
+        document.getElementById("insta").href = "https://www.instagram.com/";
+        document.getElementById("portfolio").href = "#";
+
+        document.getElementById("team-mood").innerHTML = "sad";
+        // document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "!!";
+        document.getElementById("game").innerHTML = "";
+        document.getElementById("fursona").innerHTML = "";
 
         document.getElementById("team-about-paragraph").innerHTML = "something something";
 
 })
 
 document.querySelector("#team-ka").addEventListener("click", function() {
-        
+        document.getElementById("funsies").style.visibility = "visible";
+
         document.getElementById("team-port-01").src= "assets/ru-port-01.png";
         document.getElementById("team-port-02").src= "assets/ru-port-01.png";
 
@@ -102,16 +115,25 @@ document.querySelector("#team-ka").addEventListener("click", function() {
 })
 
 document.querySelector("#team-ci").addEventListener("click", function() {
-        
+        document.getElementById("funsies").style.visibility = "visible";
+
         document.getElementById("team-port-01").src="assets/ru-port-02.png";
         document.getElementById("team-port-02").src="assets/ru-port-02.png";
 
         document.getElementById("team-about-paragraph").innerHTML = "something something";
 
+        document.getElementById("team-mood").innerHTML = "blarg";
+        // document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "webkins chihuahua";
+        document.getElementById("game").innerHTML = "club penguin";
+        document.getElementById("fursona").innerHTML = "wolf";
+
+
 })
 
 document.querySelector("#team-ei").addEventListener("click", function() {
-        
+        document.getElementById("funsies").style.visibility = "visible";
+
         document.getElementById("team-port-01").src= "assets/ru-port-01.png";
         document.getElementById("team-port-02").src= "assets/ru-port-01.png";
 
@@ -121,7 +143,8 @@ document.querySelector("#team-ei").addEventListener("click", function() {
 })
 
 document.querySelector("#team-lu").addEventListener("click", function() {
-        
+        document.getElementById("funsies").style.visibility = "visible";
+
         document.getElementById("team-port-01").src="assets/ru-port-02.png";
         document.getElementById("team-port-02").src="assets/ru-port-02.png";
 
