@@ -5,7 +5,7 @@ let canvas;
 let btn; 
 
 function preload() {
-  btn = loadImage('/assets/btn-green.png');
+  btn = loadImage('assets/btn-green.png');
 }
 
 function setup(){

@@ -172,6 +172,29 @@ header {
     left: 25vw;
     transform: rotate(20deg);
 }
+
+.home-about {
+    position: absolute;
+    left: -38vw;
+    top: -20vw;
+    transform: rotate(10deg);
+    width: 20vw;
+}
+
+.home-about-text {
+    position: absolute;
+    left: -33vw;
+    top: -15vw;
+    transform: rotate(-10deg);
+    width: 20vw;
+    font-size: 2rem;
+}
+
+
+.home-about:hover{
+    transform: scale(1.2);
+}
+
 .home-diary {
     position: absolute;
     left: -58vw;
@@ -268,6 +291,18 @@ header {
     height: auto;
 }
 }
+
+
+@media screen and (max-width:650px) {
+
+ #closed-diary {
+     height: auto;
+     width: 80vw;
+
+}   
+}
+
+
 
 /* Meet the team *****************************************************/
 .container-team {
@@ -526,6 +561,56 @@ header {
     height: 2.5rem;
 }
 
+@media screen and (max-width:650px) {
+.team-bio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -10vw;
+    font-size: 1.5rem;
+}
+
+.funsies {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    top: 30vw;
+    left: -38vw;
+    width: 80vw;
+}
+
+.funsies div {
+    background-color: antiquewhite;
+}
+
+.funsies .mood-container {
+    display: block;
+}
+
+.team-about {
+    position: absolute;
+    top: -40vw;
+    left: -35vw;
+    width: 50vw ;
+    transform: rotate(0);
+}
+
+.team-about-container img {
+    transform: scaleX(-1);
+}
+
+.team-pfp {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0vw;
+    left: 0vw;
+    width: 10vw ;
+}
+
+}
+
+
 /* About  *************************************************************/
 
 .main-about {
@@ -548,8 +633,10 @@ section {
 }
 
 .note {
-        background-color: #FFECA3;
+    background-color: #FFECA3;
     transform: rotate(-10deg);
+    justify-content: center;
+    align-items: center;
 
 }
 .note p{
@@ -557,8 +644,6 @@ section {
     font-size: 3rem;
     width: 20vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .play-btn {
@@ -586,6 +671,20 @@ section {
 
 .stuffie:hover {
     transform: rotate(-15deg);
+}
+
+@media screen and (max-width:650px) {
+.play-btn {
+    left: 50vw;
+}
+.play-btn a {
+    font-size: 2rem;
+    top: 8vw;
+    left: 7vw;
+}
+.note p{
+    font-size: 1rem;
+}
 }
 /* media queries
 ------------------------------ 

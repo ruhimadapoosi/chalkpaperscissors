@@ -32,6 +32,10 @@ document.querySelector("#log-in").addEventListener("click", function() {
 
     document.getElementById("mainphoto").src= mainarr[currentpfp];
 
+    document.getElementById("team-port-01").styles.visibility="hidden";
+    document.getElementById("team-port-02").styles.visibility="hidden";
+
+
 // console.log ((pfp[currentpfp]))
 // console.log((pfp[previouspfp]))
 
@@ -58,6 +62,7 @@ function pfpold () {
 let member = ["Ruhi", "Lin", "Kate", "Citlali", "Ein", "Lucas", "Cammy"];
 
 
+// RUHI ////////////////////////////////////////////////////////////////////////
 document.querySelector("#team-ru").addEventListener("click", function() {
         document.getElementById("funsies").style.visibility = "visible";
 
@@ -82,27 +87,35 @@ document.querySelector("#team-ru").addEventListener("click", function() {
         
 })
 
+// LIN ////////////////////////////////////////////////////////////////////////
 document.querySelector("#team-li").addEventListener("click", function() {
         document.getElementById("funsies").style.visibility = "visible";
 
-        document.getElementById("team-port-01").src="assets/ru-port-02.png";
-        document.getElementById("team-port-02").src="assets/ru-port-02.png";
+        document.getElementById("team-port-01").src="assets/li-port-01.png";
+        document.getElementById("team-port-02").src="assets/li-port-02.png";
+        document.getElementById("team-port-02").style.width ="auto";
+        document.getElementById("team-port-02").style.height ="20vw";
 
-        document.getElementById("username").innerHTML = "@lyndonbjohnson";
-        document.getElementById("email").href = "#";
-        document.getElementById("insta").href = "https://www.instagram.com/";
-        document.getElementById("portfolio").href = "#";
 
-        document.getElementById("team-mood").innerHTML = "sad";
-        // document.getElementById("team-mood-img").src = "";
-        document.getElementById("toy").innerHTML = "!!";
-        document.getElementById("game").innerHTML = "";
-        document.getElementById("fursona").innerHTML = "";
+        document.getElementById("team-about-paragraph").innerHTML = "I'm Lin! I'm the producer. I could NEVER steal Stuffie. In too busy making my spreadsheets! I have one for the production schedule and the layouts and the sound list and the emote list and the-";
 
-        document.getElementById("team-about-paragraph").innerHTML = "something something";
+        document.getElementById("username").innerHTML = "@LyndonBJohnson";
+        document.getElementById("email").style.visibility = "none";
+        document.getElementById("insta").href = "https://www.instagram.com/_lynnni_";
+        document.getElementById("portfolio").href = "https://zhiyilin.weebly.com";
+
+        document.getElementById("team-mood").innerHTML = "Eepy";
+        document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "Bonkles";
+        document.getElementById("game").innerHTML = "that one Lego Mars Mission RTS";
+        document.getElementById("fursona").innerHTML = "Penguin";
+
+        document.getElementById("mainphoto").src= "assets/li-main.png";
+
 
 })
 
+// KATE ////////////////////////////////////////////////////////////////////////
 document.querySelector("#team-ka").addEventListener("click", function() {
         document.getElementById("funsies").style.visibility = "visible";
 
@@ -111,9 +124,23 @@ document.querySelector("#team-ka").addEventListener("click", function() {
 
         document.getElementById("team-about-paragraph").innerHTML = "lorem ipsum";
 
-        
+        document.getElementById("username").innerHTML = "";
+        document.getElementById("email").href = "";
+        document.getElementById("insta").href = "";
+        document.getElementById("portfolio").href = "";
+
+        document.getElementById("team-mood").innerHTML = "";
+        document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "";
+        document.getElementById("game").innerHTML = "";
+        document.getElementById("fursona").innerHTML = "";
+
+        document.getElementById("mainphoto").src= "assets/stuffie.png";
+
+
 })
 
+// CITLALI ////////////////////////////////////////////////////////////////////
 document.querySelector("#team-ci").addEventListener("click", function() {
         document.getElementById("funsies").style.visibility = "visible";
 
@@ -128,9 +155,11 @@ document.querySelector("#team-ci").addEventListener("click", function() {
         document.getElementById("game").innerHTML = "club penguin";
         document.getElementById("fursona").innerHTML = "wolf";
 
+        document.getElementById("mainphoto").src= "assets/ci-main.png";
 
 })
 
+// EIN ////////////////////////////////////////////////////////////////////////
 document.querySelector("#team-ei").addEventListener("click", function() {
         document.getElementById("funsies").style.visibility = "visible";
 
@@ -139,9 +168,23 @@ document.querySelector("#team-ei").addEventListener("click", function() {
 
         document.getElementById("team-about-paragraph").innerHTML = "lorem ipsum";
 
-        
+        document.getElementById("username").innerHTML = "";
+        document.getElementById("email").href = "";
+        document.getElementById("insta").href = "";
+        document.getElementById("portfolio").href = "";
+
+        document.getElementById("team-mood").innerHTML = "";
+        document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "";
+        document.getElementById("game").innerHTML = "";
+        document.getElementById("fursona").innerHTML = "";
+
+        document.getElementById("mainphoto").src= "assets/stuffie.png";
+
+
 })
 
+// LUCAS //////////////////////////////////////////////////////////////////////
 document.querySelector("#team-lu").addEventListener("click", function() {
         document.getElementById("funsies").style.visibility = "visible";
 
@@ -150,14 +193,48 @@ document.querySelector("#team-lu").addEventListener("click", function() {
 
         document.getElementById("team-about-paragraph").innerHTML = "something something";
 
+        document.getElementById("username").innerHTML = "";
+        document.getElementById("email").href = "";
+        document.getElementById("insta").href = "";
+        document.getElementById("portfolio").href = "";
+
+        document.getElementById("team-mood").innerHTML = "";
+        document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "";
+        document.getElementById("game").innerHTML = "";
+        document.getElementById("fursona").innerHTML = "";
+
+        document.getElementById("mainphoto").src= "assets/stuffie.png";
+
+
 })
 
+// CAMMY  /////////////////////////////////////////////////////////////////////
 document.querySelector("#team-ca").addEventListener("click", function() {
         
-        document.getElementById("team-port-01").src= "assets/ru-port-01.png";
-        document.getElementById("team-port-02").src= "assets/ru-port-01.png";
+        document.getElementById("team-port-01").src= "assets/ca-port-01.jpg";
+        document.getElementById("team-port-02").src= "assets/ca-port-02.jpg";
+        document.getElementById("team-port-01").style.width ="auto";
+        document.getElementById("team-port-01").style.height ="15vw";
+        document.getElementById("team-port-02").style.width ="auto";
+        document.getElementById("team-port-02").style.height ="20vw";
+
 
         document.getElementById("team-about-paragraph").innerHTML = "lorem ipsum";
+
+        document.getElementById("username").innerHTML = "";
+        document.getElementById("email").href = "";
+        document.getElementById("insta").href = "";
+        document.getElementById("portfolio").href = "";
+
+        document.getElementById("team-mood").innerHTML = "";
+        document.getElementById("team-mood-img").src = "";
+        document.getElementById("toy").innerHTML = "";
+        document.getElementById("game").innerHTML = "";
+        document.getElementById("fursona").innerHTML = "";
+
+        document.getElementById("mainphoto").src= "assets/ca-main.png";
+
 
         
 })
